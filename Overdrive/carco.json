@@ -1,0 +1,17 @@
+{
+  "companies" :[
+                {
+		name: "Ferrari"
+                },
+		{
+		name: "BMW"
+		},
+		{
+		name: "Mercedes"
+		},
+		{
+		name: "Audi"
+		}
+
+]
+}

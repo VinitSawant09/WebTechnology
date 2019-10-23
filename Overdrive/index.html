@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+     Over Drive
+	</title>
+
+  <link rel="shortcut icon" href="./img/icon.png" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"/>
+  <script>
+    /*
+  var userdata = JSON.parse(carco);
+  alert(userdata);*/
+
+
+   $(document).ready(function() {
+
+   $.getJSON('carco', function(data) {
+       $.each(data.companies, function(i, f) {
+        console.log("hello");
+     });
+
+   });
+
+});
+  
+  </script>
+
+</head>
+<body>
+	<div class="header">
+		
+    	<div class="logoheader">
+
+			<img class="od_header_icon_img" rel="shortcut icon" src="./img/icon.png" />
+    
+    		<span class="logo">Over Drive</span>
+   		</div>
+   		
+   			<div class="meta-nav">
+   				<div class="main_nav">
+    				<a class="navi" href="#home">Home</a>
+    				<a class ="navi" href="#contact">Accessories</a>
+                    <a class ="navi" href="#contact">Contact</a>
+   					 <a class ="navi" href="#about">About</a>
+    			</div>
+    		</div>
+     	
+        
+    </div>
+
+   
+  <div class="search">
+    <form>
+  <input type="text" name="search" placeholder="Enter Car name.">
+    </form>
+  </div>
+  
+<div class="logo-panel">
+
+
+</div>
+
+</body>
+</html>
