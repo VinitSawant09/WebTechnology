@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Over Drive</title>
+
+<!-- css  -->
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<!-- banner  -->
+	<div class="logo-banner">
+		<img src="./imgs/icon.png"> <span class="logo-name">Over
+			Drive</span>
+	</div>
+
+<!-- menu bar  -->
+    <div class="menu-bar-div">
+	<nav class="menu-bar">
+
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#" id="featuredCars">Featured Cars</a></li>
+			<li><a href="#aboutus" id="aboutUs">About Us</a></li>
+			<li><a href="#contactus" id="contactUs">Contact Us</a></li>
+		</ul>
+	</nav>
+	</div>
+	<div class="img-slider">
+		<img id="abc" src="./imgs/car1.jpg">
+	</div>
+	
+<!-- filter dropdowns  -->	
+	
+	<div class="drop-down-container" id="dropdown_1">
+		<ul>
+			<li><select id="carBrands">
+					<option value="All Brands">All Brands</option>
+			</select></li>
+
+			<li><select id="carTypes">
+					<option value="All Types">All Types</option>
+			</select></li>
+
+			<li><select id="years">
+					<option value="All Years">All Years</option>
+			</select></li>
+
+			<li><select id="minPrice">
+					<option value="0">Min Value</option>
+					<option value="50000">50000</option>
+					<option value="100000">100000</option>
+			</select></li>
+
+			<li><select id="maxPrice">
+					<option value="0">Max Value</option>
+					<option value="200000">200000</option>
+					<option value="500000">500000</option>
+					<option value="1500000">1500000</option>
+
+			</select></li>
+			<li><button type="button" id="search" value="Search">FIND
+					VEHICLES</button></li>
+		</ul>
+	</div>
+
+<!--  search car results  -->	
+
+	<div class="search-car-list" id="search-car-details">
+		<section id="search-car" class="regular slider"></section>
+	</div>
+
+	<div class="noresult" id="noresult" style="display: none"></div>
+
+	<div class="selected-car-details" id="selected-car-details"
+		style="display: none">
+
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'"
+				class="closebtn">&times;</span> <img id="expandedImg"
+				style="width: 100%">
+			<div class="carDet" id="carDet">
+			 <p id="carName" class="carName"></p>
+			 <br>
+             <p id="carModel"></p>
+             <br>
+             <p id="carPrice"></p>
+             <br>
+             <p id="carYear"></p>
+             <br>
+             <p id="carType"></p>
+             <br>
+			 <button class="open-button" id="open-button" onclick="openForm()">Book</button>
+			</div>
+			<div id="imgtext">
+			
+			</div>
+			
+		
+		</div>
+
+<!--  search car results in the form of 3 images of the same car -->	
+
+		<div class="row" id="rowResult">
+			<div class="column" id="image1"></div>
+			<div class="column" id="image2"></div>
+			<div class="column" id="image3"></div>
+
+		</div>
+
+		
+<!--  form popup for registeration -->
+		<div class="form-popup" id="myForm">
+			<form action="submitForm()" class="form-container">
+				<h1>Booking Details</h1>
+
+				<label for="email"><b>Email</b></label> <input type="text"
+					placeholder="Enter Email" name="email" id="email"
+					onblur="validateEmail()" maxlength="50" required>
+				<div id="emailerror" class="errormsg"></div>
+
+				<label for="name"><b>Name</b></label> <input type="text"
+					placeholder="Enter Name" name="name" id="name"
+					onblur="validateName()"
+					onkeypress="return blockSpecialCharAndNumbers(event)"
+					maxlength="50" required>
+				<div id="nameerror" class="errormsg"></div>
+
+				<label for="carmodel"><b>Car Model</b></label> <input type="text"
+					placeholder="Enter Car Model" name="carmodel" id="carmodel"
+					required>
+				<div id="carmodelerror" class="errormsg"></div>
+
+				<label for="contactnumber"><b>Contact Number</b></label> <input
+					type="text" placeholder="Enter Contact Number" name="contactnumber"
+					id="contactnumber"
+					onkeypress="return blockSpecialCharAndAlpha(event)"
+					onblur="validatephno()" maxlength="10" size="10" required>
+				<div id="contactnumbererror" class="errormsg"></div>
+
+				<button type="button" onclick="submitForm()" class="btn" id="submit">Book</button>
+				<button type="button" onclick="closeForm()" class="btn1" id="close">Close</button>
+			</form>
+		</div>
+
+
+<!-- featured car module -->
+	</div>
+	<div class="featured-car-list" id="featured-car-list">
+		<hr class="horizontal-line-start fcars-hr-st">
+		<h2 class="featured-car-heading fcars-heading">FEATURED CARS</h2>		
+		<hr class="horizontal-line-end  fcars-hr-end">	
+				
+	   <div id="indexCarList" class="index-car-list">
+
+		</div>
+	</div>
+<!-- about us section-->	
+	<div class="index-about-us" id="about-us">
+		<hr class="ihorizontal-line-start">
+		
+		<h2 class="featured-car-heading">ABOUT US</h2>
+		<hr class="ihorizontal-line-end">
+
+		<div class="about-us-content" id="about-us-content">
+			<p>Founded by Kumuditha Athukorala & Vinit Sawant, OverDrive is
+				an independent car dealership who specialise in the provision of
+				quality brand-new cars at very reasonable prices.</p>
+			<br>
+			<p>OverDrive is a proud member of Team Auto Center's largest
+				network of independent Car Service, Car Valet & Crash Repair Centres
+				offering motorists a new way to reduce motoring costs.</p>
+			<br>
+			<p>In fact top management is on hand personally to ensure this is
+				the case. We also provide a number of key services to the car buyer,
+				buy cars for cash and so if you have a car to sell, get in touch and
+				we will offer you a competitive price (you will get directions to
+				our dealership from here).</p>
+		</div>
+	</div>
+<!-- contact us section-->	
+	<div class="index-contact-us" id="contact-us">
+		<hr class="horizontal-line-start">
+		<h2 class="featured-car-heading">CONTACT US</h2>
+		<hr class="horizontal-line-end">
+	</div>
+
+	<div class="contact-us-content" id="contact-us-content">
+
+		<div class="address">
+			<h3>ADDRESS</h3>
+			<p>
+				NO. 3-4,<br> PORTLAND STREET NORTH, <br> DUBLIN 01.<br>
+				D-01
+			</p>
+
+		</div>
+
+		<div id="contact-numbers" class="contact-numbers">
+			<h3>CONTACT NUMBERS</h3>
+			<p>
+				+383 89 500 1010 <br> <br> <br> <br>
+
+			</p>
+		</div>
+
+		<div class="opening-hrs">
+			<h3>OPENING HOURS</h3>
+
+			<p>
+				Mon-Thu : 09:00 - 17:30 <br> Fri : 09:00 - 17:00 <br> Sat
+				: 10:00 - 15:00 <br> Sun : CLOSED
+			</p>
+		</div>
+		<div class="email">
+			<h3>EMAIL</h3>
+			<p>onedrive@sales.ie</p>
+			<br> <br> <br>
+
+		</div>
+	</div>
+	<!-- footer section-->	
+	<div class="footer">
+		<p>Powered by OverDrive &copy; 2019</p>
+	</div>
+	
+	<!-- scripts -->	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"
+		type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/slider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/custom.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>

@@ -1,0 +1,115 @@
+{
+	"cars": [
+	{
+	     "id": "0",
+		"name": "Ferrari",
+		"model": "812 Superfast",
+		"price": 549048,
+		"type" : "Sports",
+		"year" : 2015,
+		"image1":"./img/Ferrari-812.jpg",
+		"image2":"./img/Ferrari-812-2.jpg",
+		"image3":"./img/Ferrari-812-3.jpg"
+	}, 
+	{
+	      "id": "1",
+		"name": "BMW",
+		"model": "X1",
+		"price": 31333,
+		"type" : "SUV",
+		"year" : 2012,
+		"image1":"./img/BMW-X1-1.jpg",
+		"image2":"./img/BMW-X1-2.jpg",
+		"image3":"./img/BMW-X1-3.jpg"
+	}, 
+	{
+	     "id": "2",
+		"name": "Mercedes",
+	   "model": "AMG",
+	   "price" :78420,
+	   "type" : "SUV",
+	   "year" : 2014,
+	   "image1":"./img/Mercedes-AMG-1.jpg",
+		"image2":"./img/Mercedes-AMG-2.jpg",
+		"image3":"./img/Mercedes-AMG-3.jpg"
+	   	}, 
+	{
+	      "id": "3",
+		"name": "Audi",
+	   "model": "A9",
+	   "price":71715,
+	   "type" : "Luxury",
+	   "year" : 2016,
+	   "image1":"./img/Audi-A9-1.jpg",
+		"image2":"./img/Audi-A9-2.jpg",
+		"image3":"./img/Audi-A9-3.jpg"
+	},
+	{
+	      "id": "4",
+		"name": "Ferrari",
+	   "model": "488 Pista Spider",
+	   "price": 179445,
+	   "type" : "Sports",
+	   "year" : 2014,
+	   "image1":"./img/Ferrari-PistaSpider-1.jpg",
+		"image2":"./img/Ferrari-488-PistaSpider-2.jpg",
+		"image3":"./img/Ferrari-488-PistaSpider-3.jpg"
+	},
+	{
+	      "id": "5",
+		"name": "RollsRoyce",
+	   "model":"Phantom",
+	    "price": 1200011,
+	    "type" : "Luxury",
+	    "year" : 2019,
+	    "image1":"./img/RollsRoyce-Phantom-1.jpg",
+		"image2":"./img/RollsRoyce-Phantom-2.jpg",
+		"image3":"./img/RollsRoyce-Phantom-3.jpg"
+	   
+	},
+	{
+	      "id": "6",
+		"name": "Mercedes",
+	   "model": "CLA",
+	    "price": 31475,
+	    "type" : "Sports",
+	    "year" : 2011,
+	    "image1":"./img/Mercedes-CLA-1.jpeg",
+		"image2":"./img/Mercedes-CLA-2.jpeg",
+		"image3":"./img/Mercedes-CLA-3.jpeg"
+	},
+	{
+	      "id": "7",
+		"name": "Porsche",
+	   "model": "Cayenne",
+	    "price": 113900,
+	    "type" : "SUV",
+	    "year" : 2010,
+	    "image1":"./img/Porsche-Cayenne-1.jpg",
+		"image2":"./img/Porsche-Cayenne-2.jpg",
+		"image3":"./img/Porsche-Cayenne-3.jpg"
+	},
+	{
+	      "id": "8",
+		"name": "BMW",
+	   "model": "Z4",
+	    "price": 46450,
+	    "type" : "Sports",
+	    "year" : 2011,
+	    "image1":"./img/BMW-Z4-1.jpg",
+		"image2":"./img/BMW-Z4-2.jpg",
+		"image3":"./img/BMW-Z4-3.jpg"
+	},
+	{
+	      "id": "9",
+		"name": "Porsche",
+	   "model": "911",
+	    "price": 139300,
+	    "type" : "Sports",
+	    "year" : 2018,
+	    "image1":"./img/Porsche-911-1.jpg",
+		"image2":"./img/Porsche-911-2.jpg",
+		"image3":"./img/Porsche-911-3.jpg"
+	}
+   ]
+}

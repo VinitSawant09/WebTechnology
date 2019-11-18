@@ -1,0 +1,463 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* starting slider CSS */
+
+    .slider {
+        width: 75%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    
+
+/* ending slider CSS */
+
+
+.logo-banner{
+	
+	width: 100%;
+	height: 110px;
+	background-color: #fffdfd;	
+	text-align: center;
+
+}
+
+.logo-name{
+
+	font-family: Trebuchet MS;
+	font-size: 5em;
+	text-align: center;
+
+
+}
+
+.logo-banner img{
+	margin-top: 5px;
+	width: 110px;
+	height: 90px;
+		
+}
+
+.menu-bar{
+
+	width: 100%;
+	height: 3.5em;	
+	background-color: rgb(0,0,0);
+	
+}
+
+.menu-bar ul{
+	margin-left: 30%;
+	margin-right: 25%;
+}
+
+.menu-bar ul li{
+	list-style: none;
+	display:inline-block;
+	float: left;
+	line-height: 50px;
+}
+
+.menu-bar ul li a{
+
+	display: block; 
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	font-size: 1.5em;
+	color: gray;
+	padding: 0 1.5em;
+
+}
+
+.menu-bar ul li a:hover{
+	background-color: red;
+	color: white;
+}
+
+
+.img-slider{
+	width: 100%;
+	height: 400px;
+	background-color: red;	
+}
+
+.img-slider img{
+	width: 100%;
+	height: 25em;
+}
+
+.drop-down-container{
+	margin-top: 0;
+	width: 100%;
+	height: 3.35em;	
+	background-color: rgb(0,0,0);
+	
+}
+
+.drop-down-container ul{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.drop-down-container ul li{
+	list-style: none;
+	display:inline-block;
+	float: left;
+	line-height: 30px;
+	margin: 5px 30px;
+}
+
+.drop-down-container ul li select,button{
+	display: block; 
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	color: black;
+	padding: 10px 30px;
+	background-color: white;
+	border: 0;	
+	border-radius: 5px;
+	margin-left: -1.25em;
+}
+
+.noresult
+{
+	font-size: 3em;
+    margin-left: 37%;
+	
+}
+.
+
+
+.drop-down-container ul li button{
+	background-color: red;
+	color: white;
+	padding: 11px 30px;
+}
+
+.featured-car-list{
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
+	
+}
+
+.horizontal-line-start{
+	width: 20%;
+	
+	position: relative;
+	margin-top: 1em;
+	margin-left: 20%;
+	border-style: solid black;
+	
+}
+
+.horizontal-line-end{
+	width: 20%;
+	position: relative;
+	margin-top: -1em;
+	float: right;
+	margin-right: 20%;
+	border-style: solid black;
+
+}
+
+.featured-car-heading{
+	width: auto;
+	text-decoration: none;
+	font-family: Trebuchet MS;
+	position: relative;
+	margin-left: 46%;
+	margin-right: auto;	
+	margin-top: -0.5em;
+
+}
+
+.index-about-us{
+	margin-top: 28%;
+}
+
+.index-contact-us{
+	margin-top: 5%;
+}
+
+.index-car-list{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	margin-top: 2.5%;
+	padding-left: 12%;
+}
+
+ .index-featured-car{
+ 	width: 300px;
+ 	height: 350px;
+ 	float: right;
+ 	border: solid 1px;
+ 	margin: 10px;
+ }
+
+.index-featured-car span{
+	text-align: center;
+	width: 300px;
+	position: relative;
+	
+}
+.index-featured-car span img{
+	width: 300px;
+	height: 200px;
+}
+
+.car-description{	
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	
+	width: auto;
+	height: 100px;
+	margin-left: 23%;
+}
+
+.car-price{
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	
+	width: auto;
+	height: 100px;
+	margin-left: 35%;
+	
+}
+
+.index-featured-car span button{
+	margin-left: 23%;
+	margin-top: 12%;
+	font-family: Trebuchet MS;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: red;
+	color: white;
+}
+
+.selected-car-details
+{
+	
+	width: 80%;
+	height: 60%;
+	MARGIN-LEFT: 20%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	
+	
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+ /* position: relative;*/
+  display: none;
+  margin-right: 25%;
+  width: 55%;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/*Form */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 50%;
+  right: 12%;
+  width: 15%;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 21.5%;
+  right: 30%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  top:14%;
+  width:33%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 4%;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.errormsg
+{
+  color:red;
+ 
+  font-weight: bold;
+}
+
+
+.about-us-content
+{
+	font-size: 1.50em;
+    /* margin-top: 5.5em; */
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.contact-us-content
+{
+	
+	margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+	margin-bottom: 4%;
+	
+}
+
+.address
+{
+margin-left: 4%;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+.contact-numbers
+{
+	width: 20%;
+    margin-left: 28%;
+    margin-top: -9%;
+	
+}
+
+.opening-hrs
+{
+	width: 20%;
+    margin-left: 57%;
+    margin-top: -9%;
+}
+
+.email
+{
+	width: 20%;
+    margin-left: 85%;
+    margin-top: -9%;
+}
+	
